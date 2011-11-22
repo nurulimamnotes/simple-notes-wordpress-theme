@@ -1,0 +1,278 @@
+/** Caption Image **/
+.wp-caption {
+margin-bottom: 20px;
+text-align: center;
+overflow: hidden;
+max-width: 528px !important;
+height: auto;
+}
+.wp-caption img {
+margin: 5px;
+border: none;
+margin: 0 0 2px 0;
+}
+.wp-caption p.wp-caption-text {
+color: #888;
+font-size: 12px;
+margin: 5px 0 5px 0;
+}
+
+/** Gallery **/
+.gallery .gallery-caption {
+color: #888;
+font-size: 12px;
+margin: 0 0 12px;
+}
+
+/** Align **/
+.alignleft, img.alignleft {
+display: inline;
+float: left;
+margin-right: 24px;
+margin-top: 4px;
+}
+.alignright, img.alignright {
+display: inline;
+float: right;
+margin-left: 24px;
+margin-top: 4px;
+}
+.aligncenter, img.aligncenter {
+clear: both;
+display: block;
+margin-left: auto;
+margin-right: auto;
+}
+img.alignleft, img.alignright, img.aligncenter {
+margin-bottom: 12px;
+}
+
+/** Sticky Post **/
+.sticky {
+border: 1px dashed #ccc;
+padding: 10px;
+background-color: #f9f9f9; 
+}
+
+/** Pagelink Number Post **/
+.page {
+margin: 20px 0 22px 0;
+}
+.page a:link, .page a:visited {
+margin:0;
+padding:5px;
+color:#6d5f48!important;
+text-align:center;
+-moz-box-shadow:0 1px 0 #fff,inset 0 1px 2px #afa89c;
+-webkit-box-shadow:0 1px 0 #fff,inset 0 1px 2px #afa89c;
+box-shadow:0 1px 0 #fff,inset 0 1px 2px #afa89c;
+-moz-border-radius:3px;
+-webkit-border-radius:3px;
+border-radius:3px;
+z-index:1;
+}
+.page a:active, .page a:hover {
+background:#000 ;
+color:#fff!important;
+-webkit-box-shadow:0 1px 3px #a6a397;
+box-shadow:0 1px 0px #a6a397;
+}
+
+/** Form Comment **/
+label {
+font-size:1.3em;
+color: #666
+}
+input, textarea {
+padding: 8px;
+margin: 20px 0 20px 0;
+background: #fff;
+background: -webkit-gradient(linear, 0% 0%, 0% 40%, from(#EEE), to(#FFFFFF));
+background: -moz-linear-gradient(0% 40% 90deg,#FFF, #EEE);
+opacity:0.7;
+font-size: 14px;
+color: #555;
+border: 1px #ddd solid;
+-webkit-box-shadow: 0px 0px 4px #aaa;
+-moz-box-shadow: 0px 0px 4px #aaa;
+box-shadow: 0px 0px 4px #aaa;
+-webkit-transition: background 0.3s linear
+}
+input:hover, textarea:hover {
+background: #eee;
+}
+#commentform {
+margin: 5px 20px 0 0;
+}
+#commentform textarea {
+width: 100%;
+padding: 10px;
+}
+
+/** Tombol Submit & Reply **/
+input[type=submit] {
+float:right;
+margin: -5px -20px 20px 0;
+color: #eee;
+background-color: #18a5cc;
+border: none;
+-webkit-transition: -webkit-box-shadow 0.3s linear;
+-moz-border-radius: 4px;
+-webkit-border-radius: 4px;
+border-radius: 4px;
+background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#18a5cc), to(#0a85a8));
+background: -moz-linear-gradient(25% 75% 90deg,#0a85a8, #18a5cc)
+}
+.comment-reply-link, #cancel-comment-reply-link {
+float:right;
+color: #eee;
+padding: 0.231em 0.462em;
+background-color: #18a5cc;
+border: none;
+-webkit-transition: -webkit-box-shadow 0.3s linear;
+-moz-border-radius: 4px;
+-webkit-border-radius: 4px;
+border-radius: 4px;
+background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#18a5cc), to(#0a85a8));
+background: -moz-linear-gradient(25% 75% 90deg,#0a85a8, #18a5cc)
+}
+.comment-reply-link:hover, input[type=submit]:hover {
+opacity: 0.7;
+cursor:  pointer
+}
+
+/** Daftar Komentar **/
+.commentlist li, #commentform input, #commentform textarea, .commentlist li ul li {
+font-size: 100%;
+text-transform:capitalize;
+}
+.commentlist { 
+font-size:110%
+}
+
+/** Pembatas Avatar **/
+.commentlist li .avatar {
+float: left;
+border: 1px solid #eee;
+padding: 2px;
+margin-right:5px;
+}
+/** URL Komentar **/
+.url {
+text-transform:capitalize;
+font-size:120%;
+}
+.url:hover {
+text-decoration:underline;
+cursor:help
+}
+/** Text Komentar **/
+.commentlist p {
+text-transform: none;
+padding-bottom: 10px;
+}
+
+
+/** Garis Pembatas Komentar **/
+.commentlist li {
+border: solid 1px #CAE3F2;
+-khtml-border-radius:5px; 
+-moz-border-radius:5px; 
+-webkit-border-radius:5px;
+padding: 15px 10px 25px 10px;
+margin:10px 0 10px 0;
+list-style:none
+}
+.commentlist li ul li {
+list-style: none;
+margin-right: -5px;
+margin-left: 5px;
+font-size:80%
+}
+.commentlist p {
+margin: 10px 5px 10px 5px;
+}
+.children {
+margin-left:30px;
+padding: 7px;
+}
+#commentform p {
+margin: 5px 0;
+}
+.nocomments {
+text-align: center;
+margin: 0;
+padding: 0;
+}
+#comment {
+border: solid 2px #ddd !important;
+-khtml-border-radius:5px; 
+-moz-border-radius:5px; 
+-webkit-border-radius:5px;
+}
+li.bypostauthor {
+border: solid 2px #ccc !important;
+-khtml-border-radius:5px; 
+-moz-border-radius:5px; 
+-webkit-border-radius:5px;
+}
+
+/** Komentar Balasan **/
+.authcomment {
+}
+p.form-allowed-tags, p.logged-in-as {
+display:none;
+}
+/* Pagination */
+#pagcomment, #pagination {
+margin-bottom:8px;
+margin-top:8px;
+float:right;
+}
+#pagcomment a,#pagcomment a:visited, #pagination a,#pagination a:visited {
+margin:0;
+padding:5px 10px;
+color:#6d5f48!important;
+font-weight:bold;
+font-size:14px;
+text-shadow:#f0f3f8 0 1px 1px;
+text-align:center;
+-moz-box-shadow:0 1px 0 #fff,inset 0 1px 2px #afa89c;
+-webkit-box-shadow:0 1px 0 #fff,inset 0 1px 2px #afa89c;
+box-shadow:0 1px 0 #fff,inset 0 1px 2px #afa89c;
+-moz-border-top-left-radius:3px;
+-webkit-border-top-left-radius:3px;
+border-top-left-radius:3px;
+-moz-border-bottom-left-radius:3px;
+-webkit-border-bottom-left-radius:3px;
+border-bottom-left-radius:3px;
+display:block;
+float:left;
+position:relative;
+z-index:1;
+}
+#pagcomment a:hover, #pagination a:hover {
+padding:4px 9px;
+color:#fff!important;
+text-shadow:none;
+text-decoration:none;
+border:1px solid #000;
+background:#000 ;
+-webkit-box-shadow:0 1px 3px #a6a397;
+box-shadow:0 1px 3px #a6a397;z-index:2;
+}
+#pagcomment a + a, #pagination a + a {
+margin-left:-1px;
+-moz-border-top-left-radius:0;
+-webkit-border-top-left-radius:0;
+border-top-left-radius:0;
+-moz-border-bottom-left-radius:0;
+-webkit-border-bottom-left-radius:0;
+border-bottom-left-radius:0;
+-moz-border-top-right-radius:3px;
+-webkit-border-top-right-radius:3px;
+border-top-right-radius:3px;
+-moz-border-bottom-right-radius:3px;
+-webkit-border-bottom-right-radius:3px;
+border-bottom-right-radius:3px;
+}

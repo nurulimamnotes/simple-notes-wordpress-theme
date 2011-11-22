@@ -1,0 +1,373 @@
+/*
+Theme Name: Simple Notes
+Theme URI: http://www.nurulimam.com/theme
+Author: Nurul Imam
+Author URI: http://www.nurulimam.com/
+Description: A blank theme, HTML5, Unique Style post just click dropdown menu, Integrated Grid System, sidebar, menu, fast loading, seo optimized, minimalist and simple templates for your own WordPress theme development.
+Version: 1.0
+License: GNU General Public License
+License URI: license.txt
+Tags: custom-background, dark, flexible-width, right-sidebar, threaded-comments
+*/
+
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent;margin:0;padding:0}body{line-height:1}:focus{outline:1px}article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary{display:block}nav ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}a{border:0;font-size:100%;vertical-align:baseline;background:transparent;margin:0;padding:0}ins{text-decoration:none}mark{background-color:#ff9;color:#000;font-style:italic;font-weight:700}del{text-decoration:none}abbr[title],dfn[title]{border-bottom:1px dotted #000;cursor:help}table{border-collapse:collapse;border-spacing:0}hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}input,select{vertical-align:middle}::-moz-selection{background-color:#a8d1ff;color:#000}::selection{background-color:#a8d1ff;color:#000}
+
+body{
+width:100%;
+height:100%;
+overflow:auto;
+clear:both;
+margin:0;
+padding:0;
+font:11px 'Palatino Linotype',Palatino,'Zapf Calligraphic','Book Antiqua',Georgia,serif;color:#383838;letter-spacing:0.03em;
+background: url(images/bg.gif) #fff;}
+
+/** Typo **/
+h1, h2, h3, h4, h5, h6 {
+color: #000; 
+font-weight:normal;
+text-align:center
+}
+h1 {
+font-size:2.7em;
+}
+h2 {
+font-size: 230%; 
+letter-spacing: 0.1em; 
+line-height: 1.0em; 
+   }
+h3 {
+font-size: 160%;
+   }
+h4 {
+font-size: 140%; 
+   }
+h5 {
+font-size: 120%; 
+   }
+h6 {
+font-size: 100%; 
+   }
+a {
+text-decoration:none;
+outline:none;
+color:#333
+}
+a img {
+border:none
+}
+p {
+line-height:18px
+}
+dl, ol, address, ul.children, article ul {
+font-size:1.2em;
+}
+dt, dd {
+margin:5px 0 5px 0
+}
+del, strike, s {
+text-decoration: line-through;
+}
+code, kbd, tt, ins, q, var {
+color:green;
+}
+pre{
+font-size:13px;
+font-family:Consolas,"Bitstream Vera Sans Mono","DejaVu Sans Mono","Andale Mono",Monaco,"Lucida Console","Lucida Sans Typewriter",monospace;
+color:#1eba43;
+background:#000;
+padding:1em;
+margin:1.5em 0;
+white-space:pre-wrap;
+white-space:-moz-pre-wrap;
+white-space:-pre-wrap;
+white-space:-o-pre-wrap;
+word-wrap:break-word
+}
+table {
+border: 1px solid #e7e7e7;
+margin: 0 -1px 24px 0;
+text-align: left;
+width: 100%;
+}
+th{
+margin-right:0.75em;
+border-bottom:solid 2px #ccc;
+font-weight:700;
+text-align:left;
+padding:11px 0.75em
+}
+td,tr{
+margin-right:1px;
+border-bottom:solid 1px #ddd;
+padding:12px 0.75em 11px
+}
+address {
+background:#eee;
+padding:1em;
+margin:1.5em 0;
+}
+blockquote {
+margin: 30px 0 0 0;
+padding: 0 0 0 30px;
+border-left: 1px solid #eee;
+font-style: italic;
+}
+
+/** Header **/
+header{
+background:#333
+}
+header div{
+width:100%;
+margin:0 auto;
+line-height:26px
+}
+header div:after{
+content:"Nurul Imam Notes";
+display:block;
+height:0;
+visibility:hidden;
+clear:both
+}
+header div h1{
+float:left;
+display:inline-block;
+position:relative;
+text-shadow:1px 1px 1px #a8d1ff
+}
+header div h1 a{
+color:#CAE3F2;
+display:inline-block;
+padding:9px 10px 10px 20px;
+margin-left:-20px;
+position:relative
+}
+header div h1 a:hover,header div h1 a:focus{
+background:#000;
+padding-left:30px;
+-webkit-transition-duration: 0.98s;
+-moz-transition-duration: 0.98s;
+-o-transition-duration: 0.98s;
+transition-duration: 0.98s;
+}
+header div h1 a:hover:after,header div h1 a:focus:after{
+content:"";
+display:block;
+border-top:solid 23px transparent;
+border-right:solid 23px transparent;
+border-bottom:solid 23px transparent;
+border-left:solid 23px #000;
+position:absolute;
+top:0;
+right:-46px
+}
+
+/** Navigasi **/
+nav{
+display:inline-block;
+float:right;
+margin-right:20px
+}
+#navigation ul{
+margin-right:30px;
+padding:0;
+list-style-type:none;
+list-style-position:outside;
+position:relative;
+}
+#navigation li{
+float:left;
+position:relative;
+}
+#navigation a:focus, #navigation a:hover, #navigation a:active {
+background-color:#111;
+text-shadow:1px 1px 1px #a8d1ff
+}
+#navigation a{
+display:inline-block;
+padding-top:10px;
+position:relative;
+font-size:1.2em;
+color:#CAE3F2;
+padding:10px;
+text-decoration:none;
+text-align:center
+}
+
+/** Social Icon **/
+.icons				{
+width:16px;
+height:16px;
+display:inline-block; 
+text-indent:-30000px; 
+margin:0 5px 0 0; 
+-webkit-transition-duration: 0.8s;
+-moz-transition-duration: 0.8s;
+-o-transition-duration: 0.8s;
+transition-duration: 0.8s;
+-webkit-transition-property: -webkit-transform;
+-moz-transition-property: -moz-transform;
+-o-transition-property: -o-transform;
+transition-property: transform;
+overflow:hidden;
+}
+.icons:hover		{ 
+-webkit-transform:rotate(1440deg); 
+-moz-transform:rotate(1440deg); 
+-o-transform:rotate(1440deg); 
+}
+#icon a{
+padding-top:20px
+}
+#fb		{ 
+	background:url(images/fb.png) center no-repeat; 
+}
+#twitter		{ 
+	background:url(images/twitter.png) center no-repeat; 
+}
+#feed		{ 
+	background:url(images/feed.png) center no-repeat; 
+}
+
+/** Article Heading **/
+.judul {
+background: url(images/bingkai.jpg) top center no-repeat;
+border-bottom: 1px solid #def0ef;
+font-size:80%;
+text-align:center;
+padding: 25px 0 15px 0;
+}
+.bawah {
+background: url(images/bingkai.jpg) bottom center no-repeat;
+border-top: 1px solid #def0ef;
+font-size:100%;
+padding: 5px 0 5px 0;
+}
+
+
+/** Artikel **/
+#content{
+width:60%;
+padding-top:1.5em;
+margin-left:20%;
+margin-right:auto;
+position:relative
+}
+#content section{
+margin:0 0 3em 0
+}
+#content h2 a{
+font-size:1.5em
+}
+#content h3{
+letter-spacing:0.1em
+}
+#content p,#content ol,#content ul,#content figure{
+margin-bottom:0.75em
+}
+#content figure img{
+display:block;
+max-width:33em
+}
+article p{
+font-size:1.3em;
+line-height:1.5em
+}
+article ul {
+padding-left:30px;
+list-style:none
+}
+
+/** Footer **/
+footer{
+width:100%;
+background-color:#000;
+padding-top:5px;
+padding-bottom:5px;
+float:left;
+}
+
+
+/** Disqus Comment By Ardianzz **/
+
+#disqus_thread #dsq-global-toolbar,#disqus_thread .dsq-options,#disqus_thread #dsq-comments-title,#disqus_thread .dsq-item-trackback,#disqus_thread .dsq-comment-footer,#disqus_thread #dsq-pagination{display:none}
+#disqus_thread{margin-top:0.75em;position:relative}
+#dsq-content cite p{font-weight:400 !important}
+#disqus_thread #dsq-content #dsq-comments .dsq-comment .dsq-full-comment{padding:16px 0 0;border-top:solid 1px #ddd}
+#disqus_thread #dsq-content #dsq-comments .dsq-comment .dsq-full-comment .dsq-comment-header{background:transparent;border:0;font-size:16px;margin-left:0 0 0 -8px;padding:0 0 0 80px;position:relative;font-weight:400;font-family:copse, serif}
+#disqus_thread #dsq-content #dsq-comments .dsq-comment .dsq-full-comment .dsq-comment-body{font-size:14px;line-height:1.5em;padding:0 0 0.75em 90px;color:#484848}
+#disqus_thread #dsq-content #dsq-comments .dsq-comment{padding:0;margin:0}
+#disqus_thread #dsq-content #dsq-comments .dsq-comment .dsq-full-comment .dsq-comment-header .dsq-comment-header-meta-wrapper .dsq-comment-hide-thread{display:none}
+#disqus_thread #dsq-content #dsq-comments .dsq-comment .dsq-full-comment .dsq-comment-header .dsq-comment-header-meta-wrapper .dsq-comment-header-time{display:none}
+#disqus_thread h3{display:none !important}.comments .dsq-brlink{display:none !important}
+#disqus_thread .dsq-header-avatar{position:absolute;top:0;left:0}
+#disqus_thread .dsq-header-avatar img{width:60px;height:60px}
+#disqus_thread:after{content:"";width:80px;height:100%;position:absolute;top:0;left:0;z-index:5;display:block}.dsq-request-user-avatar{display:none !important}
+.dsq-request-user-info{display:none !important}
+.dsq-comment-text p{margin:0 0 1.5em 0 !important}
+
+
+/** Responsive **/
+@media screen and (min-width: 768px) and (max-width: 900px){
+body {
+-webkit-text-size-adjust: none;
+     } 
+nav {
+font-size:.80em;
+margin-right:10px;
+}
+#icon {
+display:none !important
+}
+}
+}
+
+
+@media screen and (min-width: 400px) and (max-width: 768px){
+body {
+-webkit-text-size-adjust: none;
+     } 
+header h1, #icon {
+display:none !important
+}
+footer p{
+font-size:70%;
+margin:0;
+}
+h1 {
+font-size: large;
+   }
+h2 {
+font-size: medium;
+   }
+h3 {
+font-size: medium;
+   }
+p {
+font-size: medium;
+margin:10px;
+   }
+img, object, embed {
+max-width: 100%;
+                   }
+img {
+height: auto;
+    }
+pre {
+height: auto; 
+width: auto;
+    }
+}
+
+@media screen and (min-width: 200px) and (max-width: 480px)
+{
+header h1, #icon, footer {
+display:none !important
+}
+nav {
+font-size:.80em;
+margin-right:auto;
+margin-left:10px;
+}
+}
